@@ -1,5 +1,5 @@
 /*Sobre coherencia, consistencia y el principio de “Una sola responsabilidad”. 
-Crean un ejemplo que muestre el “God Class” o “God Object”.*/
+Crean un ejemplo que muestre el “God Class” o “God Object”*/
 #include <iostream>
 using namespace std;
 
