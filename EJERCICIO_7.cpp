@@ -1,5 +1,5 @@
 /*Crean un ejemplo en el sólo se puede modificar y leer los valores de los 
-datos de un objeto a través de métodos de interfaz (hay encapsulamiento).*/
+datos de un objeto a través de métodos de interfaz (hay encapsulamiento)*/
 #include <iostream>
 using namespace std;
 
