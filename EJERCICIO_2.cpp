@@ -8,6 +8,7 @@ using namespace std;
         public:
             animal(string);
             void hacerSonido();
+            void mostrarnombre();
     };
 
     class perro : public animal{
@@ -34,16 +35,26 @@ using namespace std;
 
     }
 
+    void animal::mostrarnombre(){
+        cout<<nombre;
+    }
+
     void animal::hacerSonido(){
-        cout<<"el animal hace un sonido"<<endl;
+        cout<<"el ";
+        mostrarnombre();
+        cout<<" hace un sonido"<<endl;
     }
 
     void perro::hacerSonido(){
-        cout<<"el perro ladra"<<endl;
+        cout<<"el ";
+        mostrarnombre();
+        cout<<" ladra"<<endl;
     }
 
     void gato::hacerSonido(){
-        cout<<"el gato maulla"<<endl;
+        cout<<"el ";
+        mostrarnombre();
+        cout<<" maulla"<<endl;
     }
 
 int main(){
