@@ -3,42 +3,42 @@ debe ser explícito el uso del mismo.*/
 #include <iostream>
 using namespace std;
 
-    class perro{
+    class Perro{
         private:
             string nombre, raza;
         public:
-            perro(string,string);
-            ~perro();
+            Perro(string,string);
+            ~Perro();
             void mostrasdatos();
             void jugar();
     };
 
-    perro::perro(string _nombre,string _raza){
+    Perro::Perro(string _nombre,string _raza){
         nombre = _nombre;
         raza = _raza;
     }
 
-    perro::~perro(){
-        cout<<"el objeto perro fue destruido"<<endl;
+    Perro::~Perro(){
+        cout<<"el objeto Perro fue destruido"<<endl;
     }
 
-    void perro::mostrasdatos(){
+    void Perro::mostrasdatos(){
         cout<<"Nombre:"<<nombre<<endl;
         cout<<"Raza:"<<raza<<endl;
     }
 
-    void perro::jugar(){
-        cout<<"el perro "<<nombre<<" esta jugando"<<endl;
+    void Perro::jugar(){
+        cout<<"el Perro "<<nombre<<" esta jugando"<<endl;
     }
 
 int main(){
 
-    perro p1("fido","doberman");
+    Perro p1("fido","doberman");
 
     p1.mostrasdatos();
     p1.jugar();
 
-    p1.~perro();
+    p1.~Perro();
 
     return 0;
 }
