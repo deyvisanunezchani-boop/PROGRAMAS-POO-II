@@ -1,5 +1,5 @@
 /*Crean un ejemplo en el que se pueden crear 3 objetos con diferentes constructores, 
-debe considerar al constructor por defecto.*/
+debe considerar al constructor por defecto*/
 #include <iostream>
 using namespace std;
 
