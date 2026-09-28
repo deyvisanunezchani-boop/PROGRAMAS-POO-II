@@ -3,7 +3,7 @@ los datos de un objeto sin métodos de interfaz (no hay encapsulamiento).*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         public:
             string nombre;
             int edad;
@@ -11,7 +11,7 @@ using namespace std;
 
 int main(){
 
-    persona p1;
+    Persona p1;
 
     p1.nombre = "rodrigo";
     p1.edad = 20;
