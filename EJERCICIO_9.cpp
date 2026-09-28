@@ -3,59 +3,59 @@ principio “Una sola responsabilidad” o también conocido como Refactoring.*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         private:
             string nombre;
         public:
-            persona(string);
+            Persona(string);
             void mostrarDatos();
     };
 
-    class trabajo{
+    class Trabajo{
         private:
             string actividad;
         public:
-            trabajo(string);
+            Trabajo(string);
             void trabajar();
     };
 
-    class pasatiempo{
+    class Pasatiempo{
         private:
             string informacion;
         public:
-            pasatiempo(string);
+            Pasatiempo(string);
             void jugarfutbol();
     };
 
-    persona::persona(string _nombre){
+    Persona::Persona(string _nombre){
         nombre = _nombre;
     }
 
-    trabajo::trabajo(string _actividad){
+    Trabajo::Trabajo(string _actividad){
         actividad = _actividad;
     }
 
-    pasatiempo::pasatiempo(string _informacion){
+    Pasatiempo::Pasatiempo(string _informacion){
         informacion = _informacion;
     }
 
-    void persona::mostrarDatos(){
+    void Persona::mostrarDatos(){
         cout<<"Nombre: "<<nombre<<endl;
     }
 
-    void trabajo::trabajar(){
+    void Trabajo::trabajar(){
         cout<<"Actividad: "<<actividad<<endl;
     }
 
-    void pasatiempo::jugarfutbol(){
-        cout<<"pasatiempo: "<<informacion<<endl;
+    void Pasatiempo::jugarfutbol(){
+        cout<<"Pasatiempo: "<<informacion<<endl;
     }
 
 int main(){
 
-    persona p1("Rodrigo");
-    trabajo t1("trabajar");
-    pasatiempo d1("jugar futbol");
+    Persona p1("Rodrigo");
+    Trabajo t1("trabajar");
+    Pasatiempo d1("jugar futbol");
 
     p1.mostrarDatos();
     t1.trabajar();
