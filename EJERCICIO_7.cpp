@@ -3,56 +3,56 @@ datos de un objeto a través de métodos de interfaz (hay encapsulamiento).*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         private:
             string nombre;
             int edad;
         public:
-            persona();
-            void setpersona(string,int);
+            Persona();
+            void setPersona(string,int);
             string getnombre();
             int getedad();
     };
 
-    persona::persona(){
+    Persona::Persona(){
 
     }
 
-    void persona::setpersona(string _nombre,int _edad){
+    void Persona::setPersona(string _nombre,int _edad){
         nombre = _nombre;
         edad = _edad;
     }
 
-    string persona::getnombre(){
+    string Persona::getnombre(){
         return nombre;
     }
 
-    int persona::getedad(){
+    int Persona::getedad(){
         return edad;
     }
 
 int main(){
 
-    persona persona1;
+    Persona Persona1;
 
-    persona1.setpersona("rodrigo",20);
+    Persona1.setPersona("rodrigo",20);
 
-    cout<<"Nombre: "<<persona1.getnombre()<<endl;
-    cout<<"Edad: "<<persona1.getedad()<<endl;
-
-    cout<<endl;
-
-    persona1.setpersona("alex",21);
-
-    cout<<"Nombre: "<<persona1.getnombre()<<endl;
-    cout<<"Edad: "<<persona1.getedad()<<endl;
+    cout<<"Nombre: "<<Persona1.getnombre()<<endl;
+    cout<<"Edad: "<<Persona1.getedad()<<endl;
 
     cout<<endl;
 
-    persona1.setpersona("eder",22);
+    Persona1.setPersona("alex",21);
 
-    cout<<"Nombre: "<<persona1.getnombre()<<endl;
-    cout<<"Edad: "<<persona1.getedad()<<endl;
+    cout<<"Nombre: "<<Persona1.getnombre()<<endl;
+    cout<<"Edad: "<<Persona1.getedad()<<endl;
+
+    cout<<endl;
+
+    Persona1.setPersona("eder",22);
+
+    cout<<"Nombre: "<<Persona1.getnombre()<<endl;
+    cout<<"Edad: "<<Persona1.getedad()<<endl;
 
     return 0;
 }
