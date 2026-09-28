@@ -1,5 +1,5 @@
 /*Sobre el ejemplo en el punto 8, crean la versión en el que se cumple el 
-principio “Una sola responsabilidad” o también conocido como Refactoring.*/
+principio “Una sola responsabilidad” o también conocido como Refactoring*/
 #include <iostream>
 using namespace std;
 
