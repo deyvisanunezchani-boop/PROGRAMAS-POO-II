@@ -1,4 +1,4 @@
-// 2. Crean un ejemplo en el que se muestra la herencia y el polimorfismo
+// 2. Crean un ejemplo en el que se muestra la herencia y el polimorfismo.
 #include <iostream>
 using namespace std;
 
