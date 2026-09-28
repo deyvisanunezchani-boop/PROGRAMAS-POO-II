@@ -1,5 +1,5 @@
 /*Crean un ejemplo en el que una subclase no puede acceder a 2 métodos de la clase padre, 
-realice las pruebas que lo demuestran.*/
+realice las pruebas que lo demuestran*/
 #include <iostream>
 using namespace std;
 
