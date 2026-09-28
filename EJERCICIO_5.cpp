@@ -3,44 +3,44 @@ realice las pruebas que lo demuestran.*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         private:
             void correr();
             void dormir();
         public:
-            persona();
+            Persona();
     };
 
-    class alumno : public persona{
+    class Alumno : public Persona{
         public:
-            alumno();
+            Alumno();
             void probar();
     };
 
-    persona::persona(){
+    Persona::Persona(){
 
     }
 
-    alumno::alumno() : persona(){
+    Alumno::Alumno() : Persona(){
 
     }
 
-    void persona::correr(){
-        cout<<"la persona esta corriendo"<<endl;
+    void Persona::correr(){
+        cout<<"la Persona esta corriendo"<<endl;
     }
 
-    void persona::dormir(){
-        cout<<"la persona esta durmiendo"<<endl;
+    void Persona::dormir(){
+        cout<<"la Persona esta durmiendo"<<endl;
     }
 
-    void alumno::probar(){
+    void Alumno::probar(){
         correr();
         dormir();
     }
 
 int main(){
 
-    alumno a1;
+    Alumno a1;
 
     a1.probar();
 
