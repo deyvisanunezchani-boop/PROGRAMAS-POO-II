@@ -3,12 +3,12 @@ Crean un ejemplo que muestre el “God Class” o “God Object”.*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         private:
             string nombre;
             int edad;
         public:
-            persona(string,int);
+            Persona(string,int);
             void mostrarDatos();
             void trabajar();
             void guardarDatos();
@@ -16,35 +16,35 @@ using namespace std;
             void llegar();
     };
 
-    persona::persona(string _nombre,int _edad){
+    Persona::Persona(string _nombre,int _edad){
         nombre = _nombre;
         edad = _edad;
     }
 
-    void persona::mostrarDatos(){
+    void Persona::mostrarDatos(){
         cout<<"Nombre: "<<nombre<<endl;
         cout<<"Edad: "<<edad<<endl;
     }
 
-    void persona::trabajar(){
+    void Persona::trabajar(){
         cout<<nombre<<" en este momento esta trabajando"<<endl;
     }
 
-    void persona::guardarDatos(){
+    void Persona::guardarDatos(){
         cout<<"los datos de "<<nombre<<" se estan guardando"<<endl;
     }
 
-    void persona::correr(){
+    void Persona::correr(){
         cout<<nombre<<" esta corriendo hacia la oficina "<<endl;
     }
 
-    void persona::llegar(){
+    void Persona::llegar(){
         cout<<nombre<<" llego a la oficina antes de lo previsto"<<endl;
     }
 
 int main(){
 
-    persona p1("Rodrigo",20);
+    Persona p1("Rodrigo",20);
 
     p1.mostrarDatos();
     p1.trabajar();
