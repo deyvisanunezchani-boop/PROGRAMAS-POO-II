@@ -3,52 +3,52 @@ debe considerar al constructor por defecto.*/
 #include <iostream>
 using namespace std;
 
-    class persona{
+    class Persona{
         private:
             string nombre;
             int edad;
         public:
-            persona();
-            persona(string);
-            persona(string,int);
-            void mostrarpersona();
+            Persona();
+            Persona(string);
+            Persona(string,int);
+            void mostrarPersona();
     };
 
-    persona::persona(){
+    Persona::Persona(){
         nombre = "sin nombre";
         edad = 0;
     }
 
-    persona::persona(string _nombre){
+    Persona::Persona(string _nombre){
         nombre = _nombre;
         edad = 0;
     }
 
-    persona::persona(string _nombre,int _edad){
+    Persona::Persona(string _nombre,int _edad){
         nombre = _nombre;
         edad = _edad;
     }
 
-    void persona::mostrarpersona(){
+    void Persona::mostrarPersona(){
         cout<<"nombre: "<<nombre<<endl;
         cout<<"edad: "<<edad<<endl;
     }
 
 int main(){
 
-    persona p1;
-    persona p2("rodrigo");
-    persona p3("alex",20);
+    Persona p1;
+    Persona p2("rodrigo");
+    Persona p3("alex",20);
 
-    p1.mostrarpersona();
-
-    cout<<endl;
-
-    p2.mostrarpersona();
+    p1.mostrarPersona();
 
     cout<<endl;
 
-    p3.mostrarpersona();
+    p2.mostrarPersona();
+
+    cout<<endl;
+
+    p3.mostrarPersona();
 
     return 0;
 }
