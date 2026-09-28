@@ -1,5 +1,5 @@
 /*Crean un ejemplo en el que se utiliza el destructor de la clase, 
-debe ser explícito el uso del mismo.*/
+debe ser explícito el uso del mismo*/
 #include <iostream>
 using namespace std;
 
