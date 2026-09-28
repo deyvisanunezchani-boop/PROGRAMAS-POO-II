@@ -1,4 +1,4 @@
-//Crean un ejemplo en el que se muestra el encapsulamiento y abstracción
+//Crean un ejemplo en el que se muestra el encapsulamiento y abstracción.
 #include <iostream>
 using namespace std;
 
